@@ -5,12 +5,24 @@
     <parent>
         <artifactId>gulimall</artifactId>
         <groupId>com.atguigu.gulimall</groupId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>gulimall-common</artifactId>
     <description>每一个微服务公共的依赖，bean，工具类等</description>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>7</source>
+                    <target>7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <!--        mybatis-plus-->
